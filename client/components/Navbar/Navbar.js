@@ -1,0 +1,33 @@
+import Image from 'next/image';
+import React from 'react';
+import logo from '../../public/assets/Logo/Steve_kim_champz_logo_with_black_bg (2) 1.svg';
+
+const Navbar = () => {
+  return (
+    <div className='bg-[rgba(255,255,0,1)] backdrop-blur-2xl w-screen h-[5rem] md:h-[7rem] 2xl:h-[8.5rem] z-10 flex items-center justify-between'>
+      <div className='ml-[3vw] w-[6.5rem] mt-6 2xl:w-[8rem] md:ml-[3vw] 2xl:mt-[2.25rem]'>
+        {/*<img
+          className='h-[4rem] w-[5rem] md:h-[5rem] md:w-[6.5rem]'
+          src='https://i.ibb.co/NF4n961/Steve-kim-champz-logo-with-black-bg-2-1.png'
+          alt='Steve-kim-champz-logo-with-black-bg-2-1'
+        />*/}
+        <Image src={logo} layout='responsive' />
+      </div>
+      <div className='mr-[6vw] md:hidden'>
+        <div className='h-[0.25rem] w-[2.25rem] bg-white rounded-sm'></div>
+        <div className='h-[0.25rem] w-[2.25rem] bg-white mt-[0.25rem] mb-[0.25rem] rounded-sm'></div>
+        <div className='h-[0.25rem] w-[2.25rem] bg-white rounded-sm'></div>
+      </div>
+      <div className='hidden md:flex text-black mr-[3vw] items-center font-Roboto xl:text-lg 2xl:text-xl 2xl:mt-[1rem]'>
+        <div className='ml-8 cursor-pointer'>HOME</div>
+        <div className='ml-8 cursor-pointer'>THE ARENA</div>
+        <div className='ml-8 cursor-pointer'>FIGHT CLUB</div>
+        <div className='ml-8 cursor-pointer'>ROADMAP</div>
+        <div className='ml-8 cursor-pointer'>GALLERY</div>
+        <div className='ml-8 cursor-pointer'>SHOP</div>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
