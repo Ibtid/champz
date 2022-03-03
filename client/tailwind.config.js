@@ -7,7 +7,7 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      white: '#fff3f3',
+      white: '#f5f5f5',
       red: '#e6042c',
       black: '#000000',
       gray: '#a19e99',
@@ -18,6 +18,7 @@ module.exports = {
       fontFamily: {
         Roboto: ['Roboto', 'sans-serif'],
         Orbitron: ['Orbitron', 'sans-serif'],
+        Inter: ['Inter', 'sans-serif'],
       },
     },
   },
