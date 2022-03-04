@@ -8,7 +8,7 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       white: '#f5f5f5',
-      red: '#e6042c',
+      red: '#C62f41',
       black: '#000000',
       gray: '#a19e99',
       galleryButton: '#e5e5e5',
