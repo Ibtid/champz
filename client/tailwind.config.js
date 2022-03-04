@@ -12,7 +12,7 @@ module.exports = {
       black: '#000000',
       gray: '#a19e99',
       galleryButton: '#e5e5e5',
-      blue: '#01317B',
+      blue: '#130832',
     },
     extend: {
       fontFamily: {
