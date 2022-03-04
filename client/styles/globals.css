@@ -22,3 +22,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.maps__unexplored {
+  background: radial-gradient(50% 50% at 50% 50%, #e6042c 0%, #01317b 100%);
+}
+
+.maps__explored {
+  background: radial-gradient(50% 50% at 50% 50%, #01317b 0%, #e6042c 100%);
+}
