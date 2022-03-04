@@ -9,8 +9,8 @@ const OddCircle = (props) => {
         } text-white grid text-lg md:text-xl font-Inter place-content-center`}>
         {props.number}
       </div>
-      <div className='absolute top-[45%] right-[-8.5rem] md:right-[-27.5rem]  flex place-content-center'>
-        <div className='h-[0.25rem] md:h-[0.3rem] w-[1.5rem] md:w-[8rem] bg-red '></div>
+      <div className='absolute top-[45%] right-[-8.5rem] md:right-[-24.5rem]  flex place-content-center'>
+        <div className='h-[0.25rem] md:h-[0.5rem] w-[1.5rem] md:w-[5rem] bg-red '></div>
         <div className='h-[0.8rem] md:h-[1rem] w-[0.8rem] md:w-[1rem] rounded-full bg-red mt-[-0.28rem] md:mt-[-0.3rem] ml-[-0.3rem] mr-[0.3rem] md:mr-[1rem]'></div>
         <div className='w-[6.5rem] md:w-[18rem] bg-red text-white text-xs md:text-base grid place-content-center p-2 md:p-5 mt-[-1rem] font-Roboto'>
           {props.content}
