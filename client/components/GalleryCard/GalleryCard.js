@@ -6,7 +6,7 @@ const GalleryCard = () => {
     <div
       className={`md:h-[13rem] md:w-[13rem] h-[10rem] w-[10rem] ${
         bgString[Math.floor(Math.random() * 3)]
-      } rounded-lg shadow-[4px_4px_10px_rgba(0,0,0,0.125)]`}></div>
+      } rounded-lg shadow-md`}></div>
   );
 };
 

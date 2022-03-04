@@ -6,6 +6,7 @@ import shuffle from '../public/assets/icons/shuffle.svg';
 
 import Image from 'next/image';
 import GalleryCard from '../components/GalleryCard/GalleryCard';
+import FilterMenu from '../components/FilterMenu/FilterMenu';
 
 const gallery = () => {
   const cardArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 4, 5, 6, 7];
@@ -17,13 +18,14 @@ const gallery = () => {
           GALLERY
         </div>
         <div className='flex'>
-          <div className='md:w-[10rem] p-1 2xl:p-2 bg-galleryButton flex place-content-center rounded-md cursor-pointer'>
+          <div className='md:w-[10rem] p-1 2xl:p-2 bg-galleryButton flex place-content-center rounded-md cursor-pointer relative'>
             <div className='h-[1rem] w-[1rem] md:mt-1 '>
               <Image src={filterIcon} layout='responsive' />
             </div>
             <div className='ml-[1rem] hidden md:flex place-content-center'>
               FILTER
             </div>
+            <FilterMenu />
           </div>
           <div className='md:w-[10rem] ml-4 mr-4 md:ml-8 md:mr-8 p-1 2xl:p-2 bg-galleryButton flex place-content-center rounded-md cursor-pointer'>
             <div className='h-[1rem] w-[1rem] md:mt-1.5 '>
