@@ -3,7 +3,10 @@ import React from 'react';
 const OddCircle = (props) => {
   return (
     <div className='flex relative'>
-      <div className='h-[2.25rem] md:h-[3rem] w-[2.25rem] md:w-[3rem] z-10 rounded-full maps__unexplored text-white grid text-lg md:text-xl font-Inter place-content-center'>
+      <div
+        className={`h-[2.25rem] md:h-[4rem] w-[2.25rem] md:w-[4rem] z-10 rounded-full ${
+          props.explored ? 'maps__explored' : 'maps__unexplored'
+        } text-white grid text-lg md:text-xl font-Inter place-content-center`}>
         {props.number}
       </div>
       <div className='absolute top-[45%] right-[-8.5rem] md:right-[-27.5rem]  flex place-content-center'>

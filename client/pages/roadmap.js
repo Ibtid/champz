@@ -11,8 +11,8 @@ const RoadMap = () => {
       {/*component left*/}
       <OddCircle
         number='1'
-        content='Build a community. We are here for the long run.
-'
+        content='Build a community. We are here for the long run.'
+        explored={true}
       />
       {/*Join*/}
       <div className='h-[4.5rem] w-[0.25rem] bg-red'></div>
@@ -20,28 +20,40 @@ const RoadMap = () => {
       <EvenCircle
         number='2'
         content='Become a Champion. Live as a Champion. Bond with the Champions.'
+        explored={false}
       />
       <div className='h-[4.5rem] w-[0.25rem] bg-red'></div>
       <OddCircle
         number='3'
         content='ChampionZ step into the Arena. All of the ChampionZ gain access to exclusive events, exclusive channels, dope merchandise, and much more. '
+        explored={false}
       />
       <div className='h-[4.5rem] w-[0.25rem] bg-red'></div>
       {/*component right*/}
       <EvenCircle
         number='4'
         content='We give back as ChampionZ. Continous and transparent charity donations throughout the journey.'
+        explored={false}
       />
       <div className='h-[4.5rem] w-[0.25rem] bg-red'></div>
       <OddCircle
         number='5'
         content='ChampionZ armor up with all kinds of merchandise.'
+        explored={false}
       />
       <div className='h-[4.5rem] w-[0.25rem] bg-red'></div>
       {/*component right*/}
-      <EvenCircle number='6' content='ChampionZ come to life - TBD' />
-      <div className='h-[4.5rem] w-[0.25rem] bg-red'></div>
-      <OddCircle number='7' content='What can you bring to the Arena?' />
+      <EvenCircle
+        number='6'
+        content='ChampionZ come to life - TBD'
+        explored={false}
+      />
+      <div className='h-[4.5rem] w-[0.25rem] bg-red '></div>
+      <OddCircle
+        number='7'
+        content='What can you bring to the Arena?'
+        explored={false}
+      />
       <div className='h-[8rem] w-screen '></div>
     </div>
   );

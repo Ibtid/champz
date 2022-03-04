@@ -3,7 +3,7 @@ import React from 'react';
 const EvenCircle = (props) => {
   return (
     <div className='flex  relative'>
-      <div className='h-[2.25rem] md:h-[3rem] w-[2.25rem] md:w-[3rem] z-10 rounded-full maps__unexplored text-white grid text-lg md:text-xl font-Inter place-content-center'>
+      <div className='h-[2.25rem] md:h-[4rem] w-[2.25rem] md:w-[4rem] z-10 rounded-full maps__unexplored text-white grid text-lg md:text-xl font-Inter place-content-center'>
         {props.number}
       </div>
       <div className='absolute top-[45%] left-[-8.5rem] md:left-[-27.5rem]  flex flex-row-reverse place-content-center'>
