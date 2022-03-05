@@ -9,7 +9,13 @@ const Navbar = () => {
   const router = useRouter();
 
   useEffect(() => {
-    console.log(window.location.pathname);
+    if (router.pathname === '/') {
+      setBackground('bg-black text-white');
+    } else if (router.pathname === '/arena') {
+      setBackground('bg-blue text-white');
+    } else {
+      setBackground('bg-white text-black');
+    }
   }, [router.pathname]);
 
   return (
@@ -30,46 +36,46 @@ const Navbar = () => {
       </div>
       <div className='hidden md:flex mr-[3vw] items-center font-Roboto xl:text-base 2xl:text-lg '>
         <div
-          className='ml-8 cursor-pointer'
+          className={`ml-8 cursor-pointer ${
+            router.pathname === '/' ? 'font-bold' : ''
+          }`}
           onClick={() => {
-            setBackground('bg-black text-white');
-
             router.push('/');
           }}>
           HOME
         </div>
         <div
-          className='ml-8 cursor-pointer'
+          className={`ml-8 cursor-pointer ${
+            router.pathname === '/arena' ? 'font-bold' : ''
+          }`}
           onClick={() => {
-            setBackground('bg-blue text-white');
-
             router.push('/arena');
           }}>
           THE ARENA
         </div>
         <div
-          className='ml-8 cursor-pointer'
+          className={`ml-8 cursor-pointer ${
+            router.pathname === '/fightClub' ? 'font-bold' : ''
+          }`}
           onClick={() => {
-            setBackground('bg-white text-black');
-
             router.push('/fightClub');
           }}>
           FIGHT CLUB
         </div>
         <div
-          className='ml-8 cursor-pointer'
+          className={`ml-8 cursor-pointer ${
+            router.pathname === '/roadmap' ? 'font-bold' : ''
+          }`}
           onClick={() => {
-            setBackground('bg-white text-black');
-
             router.push('/roadmap');
           }}>
           ROADMAP
         </div>
         <div
-          className='ml-8 cursor-pointer'
+          className={`ml-8 cursor-pointer ${
+            router.pathname === '/gallery' ? 'font-bold' : ''
+          }`}
           onClick={() => {
-            setBackground('bg-white text-black');
-
             router.push('/gallery');
           }}>
           GALLERY
