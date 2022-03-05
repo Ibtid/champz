@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 import filterIcon from '../public/assets/icons/filter.svg';
 import myCollections from '../public/assets/icons/myCollection.svg';
@@ -9,7 +9,10 @@ import GalleryCard from '../components/GalleryCard/GalleryCard';
 import FilterMenu from '../components/FilterMenu/FilterMenu';
 
 const gallery = () => {
+  const [openFilter, setOpenFilter] = useState(false);
+
   const cardArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 4, 5, 6, 7];
+
   return (
     <div className='min-w-screen min-h-screen bg-white pt-[6rem] md:pt-[7rem]'>
       {/*====================================================== Gallery and buttons ========================================================*/}
@@ -18,14 +21,18 @@ const gallery = () => {
           GALLERY
         </div>
         <div className='flex'>
-          <div className='md:w-[10rem] p-1 2xl:p-2 bg-galleryButton flex place-content-center rounded-md cursor-pointer relative'>
+          <div
+            className='md:w-[10rem] p-1 2xl:p-2 bg-galleryButton flex place-content-center rounded-md cursor-pointer relative'
+            onClick={() => {
+              setOpenFilter(!openFilter);
+            }}>
             <div className='h-[1rem] w-[1rem] md:mt-1 '>
               <Image src={filterIcon} layout='responsive' />
             </div>
             <div className='ml-[1rem] hidden md:flex place-content-center'>
               FILTER
             </div>
-            <FilterMenu />
+            {openFilter && <FilterMenu />}
           </div>
           <div className='md:w-[10rem] ml-4 mr-4 md:ml-8 md:mr-8 p-1 2xl:p-2 bg-galleryButton flex place-content-center rounded-md cursor-pointer'>
             <div className='h-[1rem] w-[1rem] md:mt-1.5 '>
