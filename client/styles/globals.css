@@ -30,3 +30,22 @@ a {
 .maps__explored {
   background: radial-gradient(50% 50% at 50% 50%, #01317b 0%, #e6042c 100%);
 }
+
+.filterMenuModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1015;
+}
+
+@media screen and (max-width: 768px) {
+  .filterMenuModal {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}

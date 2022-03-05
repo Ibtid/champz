@@ -11,7 +11,7 @@ const FilterMenuModal = () => {
 
   if (isBrowser) {
     return ReactDOM.createPortal(
-      <div className='h-screen w-screen relative top-[0rem] mt-[-100vh] z-50 bg-[rgba(0,0,0,0.5)]'>
+      <div className='filterMenuModal'>
         <FilterMenu />
       </div>,
       document.getElementById('modal-filter-menu')
