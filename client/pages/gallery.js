@@ -16,7 +16,13 @@ const gallery = () => {
 
   return (
     <div className='min-w-screen min-h-screen bg-white pt-[6rem] md:pt-[7rem]'>
-      <FilterMenuModal />
+      {openFilter && (
+        <FilterMenuModal
+          close={() => {
+            setOpenFilter(false);
+          }}
+        />
+      )}
       {/*====================================================== Gallery and buttons ========================================================*/}
       <div className='bg-white ml-[3vw] flex mr-[3vw] items-center justify-between pb-2 md:pb-5 border-b-[1px] border-gray sticky top-20 z-10'>
         <div className='font-Orbitron md:text-[1.75rem] 2xl:text-[2rem]'>
@@ -34,7 +40,6 @@ const gallery = () => {
             <div className='ml-[1rem] hidden md:flex place-content-center'>
               FILTER
             </div>
-            {openFilter && <FilterMenu />}
           </div>
           <div className='md:w-[10rem] ml-4 mr-4 md:ml-8 md:mr-8 p-1 2xl:p-2 bg-galleryButton flex place-content-center rounded-md cursor-pointer'>
             <div className='h-[1rem] w-[1rem] md:mt-1.5 '>
