@@ -16,27 +16,27 @@ const fightclub = () => {
       </div>
       <div className='absolute top-[45vh] md:top-[48vh] flex flex-wrap items-center justify-center'>
         <div className='flex items-center justify-center'>
-          <div className='font-Orbitron text-6xl md:text-9xl text-gray mr-5'>
+          <div className='font-Orbitron text-6xl md:text-9xl 2xl:text-[9rem] text-black/[0.4] mr-5'>
             1
           </div>
-          <div className='w-[10rem] md:w-[13rem] text-xs md:text-base font-Roboto text-black'>
+          <div className='w-[10rem] md:w-[13rem] 2xl:w-[16rem] text-xs md:text-base 2xl:text-xl font-Roboto text-black'>
             We are all ChampionZ in life
           </div>
         </div>
-        <div className='flex items-center justify-center mr-3 ml-3 mt-5 mb-5'>
-          <div className='font-Orbitron text-6xl md:text-9xl text-gray mr-5'>
+        <div className='flex items-center justify-center mr-3 2xl:mr-5 2xl:ml-5 ml-3 mt-5 mb-5'>
+          <div className='font-Orbitron text-6xl md:text-9xl 2xl:text-[9rem] text-black/[0.4] mr-5'>
             2
           </div>
-          <div className='w-[10rem] md:w-[13rem] text-xs md:text-base font-Roboto text-black'>
+          <div className='w-[10rem] md:w-[13rem] 2xl:w-[16rem] text-xs md:text-base 2xl:text-xl font-Roboto text-black'>
             No ChampionZ can make the journey on their own. We surround
             ourselves with other ChampionZ
           </div>
         </div>
         <div className='flex items-center justify-center m-3'>
-          <div className='font-Orbitron text-6xl md:text-9xl text-gray mr-5'>
+          <div className='font-Orbitron text-6xl md:text-9xl 2xl:text-[9rem] text-black/[0.4] mr-5'>
             3
           </div>
-          <div className='w-[10rem] md:w-[13rem] text-xs md:text-base font-Roboto text-black'>
+          <div className='w-[10rem] md:w-[13rem] 2xl:w-[16rem] text-xs md:text-base 2xl:text-xl font-Roboto text-black'>
             We fight till the end. Don't quit and live the rest of your lives as
             ChampionZ. #WAGMI
           </div>
