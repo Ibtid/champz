@@ -16,7 +16,7 @@ import Image from 'next/image';
 
 const FilterMenu = () => {
   return (
-    <div className='bg-white shadow-xl pt-8 pb-8 pr-4 pl-4 rounded-md fixed sm:scale-[1] lg:scale-[0.8] lg:top-[5rem] lg:right-[24rem] 2xl:scale-[1] 2xl:top-[9.25rem] 2xl:right-[27.5rem]'>
+    <div className='bg-white shadow-xl pt-8 pb-8 pr-4 pl-4 rounded-md  lg:fixed sm:scale-[1] lg:scale-[0.8] lg:top-[5rem] lg:right-[24rem] 2xl:scale-[1] 2xl:top-[9.25rem] 2xl:right-[27.5rem]'>
       {/*item */}
       <div className='flex items-center justify-between p-2  border-b-[1px] border-gray'>
         <div className='flex items-center justify-center mr-20'>

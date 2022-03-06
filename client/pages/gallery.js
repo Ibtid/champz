@@ -15,7 +15,7 @@ const gallery = () => {
   const cardArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 4, 5, 6, 7];
 
   return (
-    <div className='min-w-screen min-h-screen bg-white pt-[6rem] md:pt-[7rem]'>
+    <div className='min-w-screen min-h-screen bg-white ]'>
       {openFilter && (
         <FilterMenuModal
           close={() => {
@@ -24,7 +24,7 @@ const gallery = () => {
         />
       )}
       {/*====================================================== Gallery and buttons ========================================================*/}
-      <div className='bg-white ml-[3vw] flex mr-[3vw] items-center justify-between pb-2 md:pb-5 border-b-[1px] border-gray sticky top-20 z-10'>
+      <div className='bg-white h-[7rem] ml-[3vw] flex mr-[1vw] items-center justify-between pb-2 md:pb-4  border-b-[1px] border-gray sticky top-16 md:top-20 z-10'>
         <div className='font-Orbitron md:text-[1.75rem] 2xl:text-[2rem]'>
           GALLERY
         </div>
@@ -60,7 +60,7 @@ const gallery = () => {
         </div>
       </div>
       {/*====================================================== Gallery and buttons ========================================================*/}
-      <div className='mt-5 w-[94vw] ml-[3vw] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7'>
+      <div className=' mt-24 bg-white w-[94vw] ml-[3.5vw] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7'>
         {cardArray.map((card, index) => (
           <div className='mb-[2rem]' key={index}>
             <GalleryCard />

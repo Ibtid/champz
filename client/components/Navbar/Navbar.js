@@ -13,6 +13,8 @@ const Navbar = () => {
       setBackground('bg-black text-white');
     } else if (router.pathname === '/arena') {
       setBackground('bg-blue text-white');
+    } else if (router.pathname === '/fightclub') {
+      setBackground('bg-[rgba(0,0,0,0)]');
     } else {
       setBackground('bg-white text-black');
     }
@@ -55,10 +57,10 @@ const Navbar = () => {
         </div>
         <div
           className={`ml-8 cursor-pointer ${
-            router.pathname === '/fightClub' ? 'font-bold' : ''
+            router.pathname === '/fightclub' ? 'font-bold' : ''
           }`}
           onClick={() => {
-            router.push('/fightClub');
+            router.push('/fightclub');
           }}>
           FIGHT CLUB
         </div>
