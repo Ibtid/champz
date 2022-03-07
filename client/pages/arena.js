@@ -9,7 +9,7 @@ const arena = () => {
             <div className='arena_heading_white'>We step into the</div>
             <div className='arena_heading_red'>Arena.</div>
           </div>
-          <div className='arena_body_text'>
+          <div className='arena_body_text font-Roboto'>
             <div className=' md:text-lg 2xl:text-2xl mb-1 md:mb-3 2xl:mb-5'>
               We fight till the end.{' '}
             </div>

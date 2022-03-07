@@ -5,7 +5,7 @@ import OddCircle from '../components/RoadMap/OddCircle';
 const RoadMap = () => {
   return (
     <div className='min-h-screen min-w-screen flex flex-col items-center justify-center bg-white overflow-hidden'>
-      <div className='font-Orbitron text-2xl md:text-[2.5rem] 2xl:text-[3rem] mb-[2.5rem] md:mb-[6rem] mt-[7rem] md:mt-[10rem] 2xl:mt-[14rem] 2xl:mb-[7rem]'>
+      <div className='font-Orbitron text-2xl md:text-[2.5rem] 2xl:text-[3rem] mb-[2.5rem] md:mb-[6rem] mt-[7rem] md:mt-[8.5rem] 2xl:mt-[10rem] 2xl:mb-[7rem]'>
         Road Map
       </div>
       {/*component left*/}

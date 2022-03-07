@@ -1,6 +1,4 @@
-import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
-import logo from '../../public/assets/Logo/Steve_kim_champz_logo_with_black_bg (2) 1.svg';
 import { useRouter } from 'next/router';
 import NavModal from '../modals/NavModal';
 
