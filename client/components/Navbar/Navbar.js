@@ -4,7 +4,7 @@ import logo from '../../public/assets/Logo/Steve_kim_champz_logo_with_black_bg (
 
 const Navbar = () => {
   return (
-    <div className='bg-[rgba(245,245,245,0.8)] backdrop-blur-xl w-screen h-[5rem] md:h-[7rem] 2xl:h-[8.5rem] z-20 flex items-center justify-between fixed top-0 left-0'>
+    <div className='bg-[rgba(245,245,245,0)] backdrop-blur-xl w-screen h-[5rem] md:h-[7rem] 2xl:h-[8.5rem] z-20 flex items-center justify-between fixed top-0 left-0'>
       <div className='ml-[3vw] w-[6.5rem] mt-6 2xl:w-[8rem] md:ml-[3vw] 2xl:mt-[2.25rem]'>
         {/*<img
           className='h-[4rem] w-[5rem] md:h-[5rem] md:w-[6.5rem]'
