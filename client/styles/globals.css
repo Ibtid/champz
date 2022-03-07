@@ -130,7 +130,7 @@ a {
   background-color: #130832;
   height: 100vh;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .main_arena_container{
   height: 100%;
@@ -181,11 +181,48 @@ a {
 }
 
 .arena_right_container{
-  height: 31rem;
-  width: 26rem;
+  height: 48rem;
+  width: 38rem;
   margin-right: 12rem;
   background-color: #EFF3F2;
   border-radius: 12px;
+}
+
+@media screen and (max-width: 1400px) {
+ 
+  
+  .left_arena_container{
+    margin-left: 3vw;
+    height: max-content;
+    width: 40rem;
+  }
+  .arena_heading_white{
+    font-size: 48px;
+  }
+  .arena_heading_red{
+    font-size: 48px;
+  }
+  
+  .arena_body_text{
+    font-size: 18px;
+  }
+  
+  .arena_end_text_white{
+   
+    font-size: 24px;
+
+  }
+  .arena_end_text_red{
+    font-size: 24px;
+   
+  }
+  
+  .arena_right_container{
+    height: 31rem;
+    width: 28rem;
+  }
+
+
 }
 
 @media screen and (max-width: 1130px) {
