@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -31,6 +32,272 @@ a {
   background: radial-gradient(50% 50% at 50% 50%, #01317b 0%, #e6042c 100%);
 }
 
+/* SIDE BAR */
+
+/* .sidebar_container{
+  height: max-content;
+  width: max-content;
+  padding-top: 20rem;
+  background-color: #f5f5f5;
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+} */
+
+
+
+
+/* INDEX PAGE */
+
+.index_container{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  
+}
+
+.index_background_cover{
+  height: 100vh;
+  width: 100vw;
+}
+.index_heading_line1{
+  font-size: 48px;
+  font-weight: 800;
+  font-family: Orbitron;
+  color: #f5f5f5;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .index_heading_line2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.index_heading_white{
+  font-size: 48px;
+  font-weight: 800;
+  font-family: Orbitron;
+  color: #f5f5f5;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+
+}
+.index_heading_red{
+  font-size: 48px;
+  font-weight: 800;
+  font-family: Orbitron;
+  color:#C62f41;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1280px) {
+  .index_heading_line1{
+    font-size: 38px;
+  }
+  .index_heading_white{
+    font-size: 38px;
+  }
+  .index_heading_red{
+    font-size: 38px;
+  }
+  
+} */
+
+@media screen and (max-width: 550px) {
+  .index_heading_line1{
+    font-size: 28px;
+  }
+ 
+  
+}
+
+
+/* ARENA PAGE */
+
+.arena_screen{
+  background-color: #130832;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+.main_arena_container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7rem;
+}
+
+.left_arena_container{
+  margin-left: 3vw;
+  height: max-content;
+  width: 60rem;
+}
+.arena_heading_white{
+  font-size: 66px;
+  font-weight: 800;
+  font-family: Orbitron;
+  color: #f5f5f5;
+}
+.arena_heading_red{
+  font-size: 66px;
+  font-weight: 800;
+  font-family: Orbitron;
+  color: #C62f41;
+  margin-bottom: 1rem;
+}
+
+.arena_body_text{
+  font-size: 28px;
+  font-weight: 500;
+  font-family: Roboto;
+  color: #f5f5f5;
+}
+
+.arena_end_text_white{
+  margin-top: 1rem;
+  font-size: 46px;
+  font-weight: 800;
+  font-family: Orbitron;
+  color: #f5f5f5;
+}
+.arena_end_text_red{
+  font-size: 46px;
+  font-weight: 800;
+  font-family: Orbitron;
+  color: #C62f41;
+}
+
+.arena_right_container{
+  height: 48rem;
+  width: 38rem;
+  margin-right: 12rem;
+  background-color: #EFF3F2;
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 1400px) {
+ 
+  
+  .left_arena_container{
+    margin-left: 3vw;
+    height: max-content;
+    width: 40rem;
+  }
+  .arena_heading_white{
+    font-size: 48px;
+  }
+  .arena_heading_red{
+    font-size: 48px;
+  }
+  
+  .arena_body_text{
+    font-size: 18px;
+  }
+  
+  .arena_end_text_white{
+   
+    font-size: 24px;
+
+  }
+  .arena_end_text_red{
+    font-size: 24px;
+   
+  }
+  
+  .arena_right_container{
+    height: 31rem;
+    width: 28rem;
+  }
+
+
+}
+
+@media screen and (max-width: 1130px) {
+  .main_arena_container{
+    display: inline;
+    margin-top: 30rem;
+  }
+
+  .left_arena_container{
+    width: max-content;
+    height: max-content;
+    margin-top: 10rem;
+  }
+  .arena_heading_white{
+    font-size: 34px;
+  
+  }
+  .arena_heading_red{
+    font-size: 34px;
+   
+  }
+  .arena_body_text{
+    font-size: 12px;
+   
+  }
+  
+  .arena_end_text_white{
+    font-size: 18px;
+  }
+  .arena_end_text_red{
+    font-size: 18px;
+  }
+  
+  .arena_right_container{
+    margin-left: 12rem;
+    height: 20rem;
+    width: 16rem;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .left_arena_container{
+    margin-left: 5rem;
+  }
+
+  .arena_right_container{
+    margin-left: 5rem;
+    height: 16rem;
+    width: 12rem;
+    border-radius: 5px;
+  }
+
+  .arena_heading_white{
+    font-size: 24px;
+  
+  }
+  .arena_heading_red{
+    font-size: 24px;
+   
+  }
+  .arena_body_text{
+    font-size: 10px;
+   
+  }
+  
+  .arena_end_text_white{
+    font-size: 14px;
+  }
+  .arena_end_text_red{
+    font-size: 14px;
+  }
+  
+}  
+
 .filterMenuModal {
   display: flex;
   justify-content: center;
@@ -49,3 +316,4 @@ a {
     background-color: rgba(0, 0, 0, 0.5);
   }
 }
+
