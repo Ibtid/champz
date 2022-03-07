@@ -1,4 +1,4 @@
-##How to run
+###How to run
 
 1) Go to client directory.
 2) Run: npm install.
