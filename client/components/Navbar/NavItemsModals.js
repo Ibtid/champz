@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 
 const NavItemsModals = (props) => {
   const [background, setBackground] = useState('bg-black text-white');
+  const [shop, setShop] = useState('SHOP');
   const router = useRouter();
 
   useEffect(() => {
@@ -60,7 +61,16 @@ const NavItemsModals = (props) => {
           }}>
           GALLERY
         </div>
-        <div className='p-2 mb-2 mt-2 border-b-2'>SHOP</div>
+        <div
+          onMouseEnter={() => {
+            setShop('COMING SOON');
+          }}
+          onMouseLeave={() => {
+            setShop('SHOP');
+          }}
+          className='p-2 mb-2 mt-2 border-b-2'>
+          {shop}
+        </div>
       </div>
     </div>
   );

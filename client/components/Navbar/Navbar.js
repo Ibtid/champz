@@ -7,6 +7,7 @@ import NavModal from '../modals/NavModal';
 const Navbar = () => {
   const [background, setBackground] = useState('bg-black text-white');
   const [hamburger, setHamburger] = useState('bg-white');
+  const [shop, setShop] = useState('SHOP');
   const [open, setOpen] = useState(false);
 
   const router = useRouter();
@@ -101,7 +102,16 @@ const Navbar = () => {
           }}>
           GALLERY
         </div>
-        <div className='ml-8 cursor-pointer'>SHOP</div>
+        <div
+          onMouseEnter={() => {
+            setShop('COMING SOON');
+          }}
+          onMouseLeave={() => {
+            setShop('SHOP');
+          }}
+          className='ml-8 cursor-pointer'>
+          {shop}
+        </div>
       </div>
     </div>
   );
