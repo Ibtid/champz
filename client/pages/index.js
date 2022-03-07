@@ -16,6 +16,7 @@ export default function Home() {
           be a <span style={{ color: '#C62f41' }}>Champion?</span>
         </div>
       </div>
+      <div className='home__gradient'></div>
     </div>
   );
 }
