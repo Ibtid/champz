@@ -31,19 +31,6 @@ a {
   background: radial-gradient(50% 50% at 50% 50%, #01317b 0%, #e6042c 100%);
 }
 
-/* SIDE BAR */
-
-/* .sidebar_container{
-  height: max-content;
-  width: max-content;
-  padding-top: 20rem;
-  background-color: #f5f5f5;
-  position: absolute;
-  top: 50%;
-  left: 95%;
-  transform: translate(-50%, -50%);
-} */
-
 /* INDEX PAGE */
 
 .index_container {
@@ -101,18 +88,22 @@ a {
 }
 
 .left_arena_container {
-  margin-left: 3vw;
-  height: max-content;
-  width: 60rem;
+  margin-left: 5vw;
+  height: 80vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .arena_heading_white {
-  font-size: 66px;
+  font-size: 60px;
   font-weight: 800;
   font-family: Orbitron;
   color: #f5f5f5;
+  margin-bottom: -1rem;
 }
 .arena_heading_red {
-  font-size: 66px;
+  font-size: 60px;
   font-weight: 800;
   font-family: Orbitron;
   color: #c62f41;
@@ -141,24 +132,23 @@ a {
 }
 
 .arena_right_container {
-  height: 48rem;
-  width: 38rem;
-  margin-right: 12rem;
+  height: 80vh;
+  width: 30vw;
+  margin-right: 10vw;
   background-color: #eff3f2;
   border-radius: 12px;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1600px) {
   .left_arena_container {
-    margin-left: 3vw;
-    height: max-content;
-    width: 40rem;
+    height: 70vh;
   }
+
   .arena_heading_white {
-    font-size: 48px;
+    font-size: 40px;
   }
   .arena_heading_red {
-    font-size: 48px;
+    font-size: 40px;
   }
 
   .arena_body_text {
@@ -173,21 +163,22 @@ a {
   }
 
   .arena_right_container {
-    height: 31rem;
-    width: 28rem;
+    height: 70vh;
+    width: 25vw;
   }
 }
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 768px) {
   .main_arena_container {
     display: inline;
-    margin-top: 30rem;
+    margin-top: 0rem;
+    padding-top: 0rem;
   }
 
   .left_arena_container {
     width: max-content;
     height: max-content;
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
   .arena_heading_white {
     font-size: 34px;
@@ -207,6 +198,7 @@ a {
   }
 
   .arena_right_container {
+    margin-top: 2rem;
     margin-left: 12rem;
     height: 20rem;
     width: 16rem;
