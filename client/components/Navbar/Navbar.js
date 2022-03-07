@@ -14,7 +14,7 @@ const Navbar = () => {
 
   useEffect(() => {
     if (router.pathname === '/') {
-      setBackground('bg-black text-white');
+      setBackground('bg-[rgba(0,0,0,0)] text-white');
       setHamburger('bg-white');
     } else if (router.pathname === '/arena') {
       setBackground('bg-blue text-white');
