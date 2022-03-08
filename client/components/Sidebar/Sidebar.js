@@ -7,7 +7,7 @@ import Image from 'next/image';
 function Sidebar() {
   const router = useRouter();
   return (
-    <div className='hidden bg-[rgba(245,245,245,0)] fixed top-1/3 pt-14 right-10 overflow-hidden cursor-pointer md:flex flex-col space-y-4 z-20 ...'>
+    <div className='hidden bg-[rgba(245,245,245,0)] fixed top-1/3 pt-14 right-[1.25vw] overflow-hidden cursor-pointer md:flex flex-col space-y-4 z-20 ...'>
       <div>
         <Image
           src={
