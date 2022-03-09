@@ -6,6 +6,7 @@ const Navbar = () => {
   const [background, setBackground] = useState('bg-black text-white');
   const [hamburger, setHamburger] = useState('bg-white');
   const [shop, setShop] = useState('SHOP');
+  const [gallery, setGallery] = useState('GALLERY');
   const [open, setOpen] = useState(false);
 
   const router = useRouter();
@@ -92,13 +93,16 @@ const Navbar = () => {
           ROADMAP
         </div>
         <div
+          onMouseEnter={() => {
+            setGallery('COMING SOON');
+          }}
+          onMouseLeave={() => {
+            setGallery('GALLERY');
+          }}
           className={`ml-8 cursor-pointer ${
             router.pathname === '/gallery' ? 'font-bold' : ''
-          }`}
-          onClick={() => {
-            router.push('/gallery');
-          }}>
-          GALLERY
+          }`}>
+          {gallery}
         </div>
         <div
           onMouseEnter={() => {

@@ -5,9 +5,9 @@ import myCollections from '../public/assets/icons/myCollection.svg';
 import shuffle from '../public/assets/icons/shuffle.svg';
 
 import Image from 'next/image';
-import GalleryCard from '../components/GalleryCard/GalleryCard';
-import FilterMenu from '../components/FilterMenu/FilterMenu';
-import FilterMenuModal from '../components/modals/FilterMenuModal';
+import GalleryCard from './GalleryCard';
+
+import FilterMenuModal from '../modals/FilterMenuModal';
 
 const gallery = () => {
   const [openFilter, setOpenFilter] = useState(false);
