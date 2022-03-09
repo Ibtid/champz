@@ -10,16 +10,16 @@ const arena = () => {
             <div className='arena_heading_red'>Arena.</div>
           </div>
           <div className='arena_body_text font-Roboto'>
-            <div className=' md:text-lg 2xl:text-2xl mb-1 md:mb-3 2xl:mb-5'>
+            <div className=' md:text-lg 2xl:text-2xl mb-1 md:mb-3 2xl:mb-6'>
               We fight till the end.{' '}
             </div>
-            <div className='md:text-lg 2xl:text-2xl mb-1 md:mb-3 2xl:mb-5'>
+            <div className='md:text-lg 2xl:text-2xl mb-1 md:mb-3 2xl:mb-6'>
               We rise as ChampZ.{' '}
             </div>
-            <div className='md:text-lg 2xl:text-2xl mb-1 md:mb-3 2xl:mb-5'>
+            <div className='md:text-lg 2xl:text-2xl mb-1 md:mb-3 2xl:mb-6'>
               10,000 ChampionZ come together to conquer the world.
             </div>
-            <div className='md:text-lg  2xl:text-2xl mb-1 md:mb-3 2xl:mb-5 '>
+            <div className='md:text-lg  2xl:text-2xl mb-1 md:mb-3 2xl:mb-6 '>
               {' '}
               We bond with one another and we build the community together.{' '}
             </div>
@@ -27,7 +27,7 @@ const arena = () => {
             <div className='md:text-lg 2xl:text-2xl'>
               The Arena gives all the ChampionZ access to special events,{' '}
             </div>
-            <div className='md:text-lg 2xl:text-2xl mb-1 md:mb-3 2xl:mb-5 '>
+            <div className='md:text-lg 2xl:text-2xl mb-1 md:mb-3 2xl:mb-6 '>
               secret channels, dope merchandise, and much more.
             </div>
           </div>
